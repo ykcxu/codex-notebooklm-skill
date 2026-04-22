@@ -1,0 +1,4 @@
+interface:
+  display_name: "NotebookLM Skill"
+  short_description: "Prepare source packs, summaries, and research artifacts for NotebookLM workflows."
+  default_prompt: "Turn my mixed research materials into NotebookLM-ready sources, summaries, and questions."
