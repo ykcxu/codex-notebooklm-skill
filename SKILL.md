@@ -88,4 +88,5 @@ Before finishing:
 
 - Read `references/notebooklm-workflow.md` when you need the detailed checklist, artifact templates, or a recommended output layout.
 - Use `scripts/build_notebooklm_pack.py` when the user provides a local folder and needs a fast, repeatable first-pass source inventory plus starter Markdown artifacts.
+- Use `scripts/upload_to_notebooklm.js` when the user wants browser-based automatic upload into NotebookLM from a local folder.
 - Keep `SKILL.md` lean; put expanded guidance in references instead of repeating it here.
