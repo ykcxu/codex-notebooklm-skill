@@ -1,6 +1,6 @@
 ---
 name: codex-notebooklm-skill
-description: Prepare, restructure, and quality-check source materials for NotebookLM research workflows. Use when Codex needs to turn raw notes, web research, transcripts, PDFs, Markdown, or mixed documents into NotebookLM-ready source packs, reading lists, import checklists, concise summaries, question sets, briefing docs, or citation-friendly knowledge bases.
+description: Prepare, restructure, and quality-check source materials for NotebookLM research workflows. Use when Codex needs to turn raw notes, web research, transcripts, PDFs, Markdown, copied articles, meeting notes, exported chats, or mixed folders into NotebookLM-ready source packs, reading lists, import checklists, concise summaries, question sets, briefing docs, timelines, glossaries, citation maps, or citation-friendly knowledge bases. Trigger on requests such as "organize NotebookLM materials", "build a NotebookLM import pack", "turn these PDFs, web notes, and docs into research material", "generate a Q&A outline", or "create an upload-ready knowledge pack".
 ---
 
 # Codex NotebookLM Skill
@@ -17,6 +17,19 @@ Normalize sources, remove duplication, preserve provenance, and produce outputs 
 3. Normalize filenames, titles, and metadata before summarizing.
 4. Produce a compact source manifest and a NotebookLM-ready briefing.
 5. Keep every claim traceable back to a concrete source.
+
+## Trigger Hints
+
+Use this skill immediately when the user asks to:
+
+- organize NotebookLM materials
+- generate a NotebookLM import pack
+- combine PDFs, Markdown, and web notes into research material
+- create summaries, question sets, timelines, or glossaries from a source bundle
+- clean a messy folder so it becomes suitable for knowledge-base or research Q&A use
+
+Do not overcomplicate the first pass.
+Prefer a narrow but complete source pack over a bloated archive.
 
 ## Default Workflow
 
@@ -72,4 +85,5 @@ Before finishing:
 ## Resource Usage
 
 - Read `references/notebooklm-workflow.md` when you need the detailed checklist, artifact templates, or a recommended output layout.
+- Use `scripts/build_notebooklm_pack.py` when the user provides a local folder and needs a fast, repeatable first-pass source inventory plus starter Markdown artifacts.
 - Keep `SKILL.md` lean; put expanded guidance in references instead of repeating it here.
