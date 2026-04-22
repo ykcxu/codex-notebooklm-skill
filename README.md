@@ -45,3 +45,25 @@ node .\scripts\upload_to_notebooklm.js `
 - 这个脚本通过浏览器自动化完成上传，不是官方 API。
 - 第一次运行时，如果浏览器未登录 Google，需要你在打开的窗口里手动登录。
 - 更稳的做法是先新建一个专门给自动化用的 Chrome Profile。
+- 可以配合这些参数增强稳定性：
+
+```powershell
+node .\scripts\upload_to_notebooklm.js `
+  --source-dir <你的资料目录> `
+  --append `
+  --existing-notebook-name "已有 notebook 名称" `
+  --user-data-dir "C:\Users\Administrator\AppData\Local\Google\Chrome\User Data" `
+  --profile-directory "Default" `
+  --retries 3 `
+  --max-files 20
+```
+
+也可以直接指定已有 notebook URL：
+
+```powershell
+node .\scripts\upload_to_notebooklm.js `
+  --source-dir <你的资料目录> `
+  --append `
+  --notebook-url "https://notebooklm.google.com/notebook/..." `
+  --user-data-dir "C:\Users\Administrator\AppData\Local\Google\Chrome\User Data"
+```
