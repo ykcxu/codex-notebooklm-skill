@@ -26,4 +26,6 @@ python .\scripts\build_notebooklm_pack.py <你的资料目录>
 - `source-manifest.md`
 - `briefing.md`
 - `question-set.md`
+- `upload-plan.md`
+- `duplicate-candidates.md`
 - `source-inventory.csv`

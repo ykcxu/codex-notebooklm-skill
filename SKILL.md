@@ -54,6 +54,8 @@ Produce only the artifacts needed for the request. Common outputs:
 - `source-manifest.md`: ordered source list with one-line descriptions
 - `briefing.md`: concise context memo for the notebook
 - `question-set.md`: research questions the user can ask inside NotebookLM
+- `upload-plan.md`: recommended upload sequence by priority
+- `duplicate-candidates.md`: exact duplicate-content candidates for cleanup
 - `timeline.md`: key events in date order
 - `glossary.md`: entities, acronyms, and definitions
 - `citation-map.md`: notable claims mapped to source names

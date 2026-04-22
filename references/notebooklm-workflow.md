@@ -62,6 +62,34 @@ For each candidate source, check:
 - What evidence is still missing?
 ```
 
+### `upload-plan.md`
+
+```md
+# Upload Plan
+
+## Upload first
+- core-source-a.pdf
+- core-notes.md
+
+## Upload after first pass
+- supporting-summary.docx
+
+## Review before upload
+- old-export.zip
+```
+
+### `duplicate-candidates.md`
+
+```md
+# Duplicate Candidates
+
+- Duplicate groups found: 2
+
+## SHA1 abcdef123456
+- folder-a/report.pdf
+- folder-b/report-copy.pdf
+```
+
 ## Quality bar
 
 - Prefer original source documents over summaries.
@@ -69,3 +97,4 @@ For each candidate source, check:
 - Make uncertainty visible.
 - Avoid invented citations.
 - Do not merge separate entities just because names look similar.
+- Remove exact duplicates before final upload unless the duplicate location itself is meaningful.
